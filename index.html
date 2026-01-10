@@ -205,9 +205,9 @@
 
     .action-buttons {
       display: flex;
-      flex-wrap: wrap;
-      gap: 56px;
-      justify-content: center;
+      flex-direction: column;
+      gap: 32px;
+      align-items: center;
       margin-top: 90px;
     }
 
@@ -221,7 +221,9 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 240px;
+      min-width: 320px;
+      max-width: 400px;
+      width: 100%;
     }
 
     .btn-primary {
@@ -272,7 +274,7 @@
       .logo-main { font-size: 11rem; }
       h2 { font-size: 3.6rem; }
       .stat-card, .feature { padding: 60px 40px; }
-      .action-buttons { flex-direction: column; gap: 30px; }
+      .btn { min-width: 280px; padding: 20px 60px; }
     }
   </style>
 </head>
@@ -294,7 +296,7 @@
 
     <section>
       <div class="intro-block">
-        <p>World Wide Logistic — это серьёзная, дисциплинированная команда с многолетним опытом в ETS2. Мы проводим регулярные конвои по всей карте игры.</p>
+        <p>World Wide Logistic — это серьёзная, дисциплинированная команда с опытом в ETS2. Мы проводим регулярные конвои по всей карте игры.</p>
         <p>У нас строгий единый стиль, чёткое расписание и система поддержки, которая помогает каждому участнику — от первого конвоя до лидерства в команде.</p>
       </div>
 
@@ -325,13 +327,12 @@
 
         <div class="feature">
           <h3>Поддержка 24/7 в Телеграм</h3>
-          <p>Подключение к конвою, советы по вождению, помощь в любых вопросах — наши ветераны всегда на связи и готовы помочь.<br><br>
-          <strong>По всем вопросам обращайтесь в Telegram владельца:</strong> <a href="https://t.me/WWLC_Owner" target="_blank" style="color: #3b82f6; text-decoration: none;">@WWLC_Owner</a></p>
+          <p>Подключение к конвою, советы по вождению, помощь в любых вопросах — наши ветераны всегда на связи и готовы помочь.</p>
         </div>
 
         <div class="feature">
           <h3>Регулярное расписание конвоев</h3>
-          <p>Несколько рейсов в неделю: короткие вечерние (2–4 часа) и масштабные выходные марафоны (10–16 часов) по живописным маршрутам.</p>
+          <p>Конвои проводятся в вечернее время и по выходным, включая протяжённые маршруты по живописным локациям.</p>
         </div>
 
         <div class="feature">
@@ -348,11 +349,11 @@
       </p>
 
       <div class="action-buttons">
-        <a href="https://discord.gg/KqeaWY482f" target="_blank" class="btn btn-primary">
-          Вступить в Discord
-        </a>
         <a href="https://t.me/WWLC_Owner" target="_blank" class="btn btn-telegram">
           Написать владельцу в Telegram
+        </a>
+        <a href="https://discord.gg/KqeaWY482f" target="_blank" class="btn btn-primary">
+          Вступить в Discord
         </a>
         <a href="https://disk.yandex.ru/d/T58Waa5AU4MWqA" target="_blank" class="btn btn-outline">
           Скачать готовый профиль
