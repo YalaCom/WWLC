@@ -218,6 +218,10 @@
       text-decoration: none;
       border-radius: 16px;
       transition: all 0.45s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 240px;
     }
 
     .btn-primary {
@@ -230,6 +234,18 @@
       background: var(--accent-dark);
       transform: translateY(-7px);
       box-shadow: 0 28px 70px rgba(59,130,246,0.55);
+    }
+
+    .btn-telegram {
+      background: #0088cc;
+      color: white;
+      border: 1px solid #0088cc;
+    }
+
+    .btn-telegram:hover {
+      background: #006699;
+      transform: translateY(-7px);
+      box-shadow: 0 28px 70px rgba(0,136,204,0.55);
     }
 
     .btn-outline {
@@ -256,6 +272,7 @@
       .logo-main { font-size: 11rem; }
       h2 { font-size: 3.6rem; }
       .stat-card, .feature { padding: 60px 40px; }
+      .action-buttons { flex-direction: column; gap: 30px; }
     }
   </style>
 </head>
@@ -307,8 +324,9 @@
         </div>
 
         <div class="feature">
-          <h3>Поддержка 24/7 в Telegram</h3>
-          <p>Подключение к конвою, советы по вождению, помощь в любых вопросах — наши ветераны всегда на связи и готовы помочь.</p>
+          <h3>Поддержка 24/7 в Discord</h3>
+          <p>Подключение к конвою, советы по вождению, помощь в любых вопросах — наши ветераны всегда на связи и готовы помочь.<br><br>
+          <strong>По всем вопросам обращайтесь в Telegram владельца:</strong> <a href="https://t.me/WWLC_Owner" target="_blank" style="color: #3b82f6; text-decoration: none;">@WWLC_Owner</a></p>
         </div>
 
         <div class="feature">
@@ -332,6 +350,9 @@
       <div class="action-buttons">
         <a href="https://discord.gg/KqeaWY482f" target="_blank" class="btn btn-primary">
           Вступить в Discord
+        </a>
+        <a href="https://t.me/WWLC_Owner" target="_blank" class="btn btn-telegram">
+          Написать владельцу в Telegram
         </a>
         <a href="https://disk.yandex.ru/d/T58Waa5AU4MWqA" target="_blank" class="btn btn-outline">
           Скачать готовый профиль
